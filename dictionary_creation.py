@@ -24,6 +24,6 @@ def create_lemma_dict(xml_source_dir, output_path):
 
 
 # quick example
-in_neg_dir = "resources/tagged_in/neg"
-out_neg_dir = "resources/dicts/neg"
+in_neg_dir = "resources/tagged_in/pos"
+out_neg_dir = "resources/dicts/pos"
 create_lemma_dict(in_neg_dir, out_neg_dir)

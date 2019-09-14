@@ -31,3 +31,6 @@ def core_all(input_dir, output_dir, memory="8g"):
 
             with output_file_path.open(mode="w", encoding="utf-8") as f:
                 f.write(output_xml)
+
+
+# java -mx16g -cp "*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9000 -timeout 25000 -MaxCharLength 100000000000
