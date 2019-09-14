@@ -2,14 +2,13 @@ I appreciate all the great advice. # 1
 Death and gloom envelop me. # 0
 Her hope is dashed pretty quickly. # 0
 Tears roll down her face. # 0
-It does not make him feel any more comfortable. # 0
 It was an old store with wooden floors that creaked in a friendly way. # 1
 He sat in his favorite chair. # 1
 She smiled. # 1
 She had no one left any longer. # 0
 His mouth turned down with distaste. # 0
 She turned back to help him. # 1
-She was greatful for the early-morning temperature. # 1
+She was grateful for the early-morning temperature. # 1
 In the past few months she had not seen him laugh enough. # 0
 He had waited for this moment for so long. # 1
 It was like a clear, perfect, shimmering crystal of happiness. # 1
@@ -53,7 +52,7 @@ I saw sudden, needless death. # 0
 The darkness gathered closer. # 0
 It was great. # 1
 Children were playing in the garden. # 1
-They looked healty and alive. # 1
+They looked healthy and alive. # 1
 It rained real heavy. # 0
 The walls were covered with wonderful posters. # 1
 There was nothing wrong. # 1
@@ -62,7 +61,6 @@ She was so lonely she cried. # 0
 The relief was enormous. # 1
 It was a peaceful place. # 1
 She was happy for the first time in days. # 1
-It is coming up a storm. # 0
 There was a scream from somewhere else. # 0
 His eyes were dark, they looked sad. # 0
 The voice echoed terribly in the cave. # 0
@@ -80,21 +78,23 @@ It was a beautiful day. # 1
 It was wonderful. # 1
 I was happy with the results. # 1
 That was funny. # 1
-That was not funny. # 0
 The chances were good. # 1
-I was greatful. # 1
+I was grateful. # 1
 The masterpiece was destroyed. # 0
 A picture of destruction showed up. # 0
-Noone coould help. # 0
 Everything was just right. # 1
-All hopes were gone. # 0
+All hope was gone. # 0
 The feeling of failure was everywhere. # 0
-There was not a single good sign in it. # 0
 Her believe strengthened her. # 1
 I hate everything. # 0
 I love everything. # 1
 The fear was gone. # 1
 The daylight vanished. # 0
-The last candle extinguised. # 0
-There were no reason to cry. # 1
-I remember a shadow. # 0
+The last candle extinguished to dim darkness. # 0
+There was no reason to cry. # 1
+Laughter and kittens were gay. # 1
+Pink bubbles were around my favourite mother. # 1
+Exuberant puppies love me. # 1
+I was always sure of their affection. # 1
+A smile a day keeps me satisfied. # 1
+True love never falters, just like ours. # 1
