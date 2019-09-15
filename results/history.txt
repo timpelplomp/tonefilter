@@ -1,0 +1,9 @@
+first:
+small positive corpus: dear little corpus:
+
+first unbalanced: accuracy 56 - negative leaning
+
+first balanced: 50/50: huh!
+
+
+
