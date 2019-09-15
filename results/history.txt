@@ -8,6 +8,13 @@ first balanced: 50/50: huh!
 
 
 
-texblob simple:
+textblob_simple simple:
 Final ACC: 55.0
 num_pos: 50 out of 100
+
+
+textblob_Bayes:
+2~ seconds per sentence - takes too long to be practical?
+Final ACC: 61.0
+num_pos: 50 out of 100
+
