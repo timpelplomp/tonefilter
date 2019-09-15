@@ -5,7 +5,7 @@ from pathlib import Path
 # nltk.download('averaged_perceptron_tagger')
 
 
-def analyse_sent(sentence, pos_fp="final_dict/pos_dict_cut.json", neg_fp="final_dict/neg_dict_cut.json"):
+def analyse_sent(sentence="NOOOO", pos_fp="final_dict/pos_dict_cut.json", neg_fp="final_dict/neg_dict_cut.json"):
     pos_dict = json.load(Path(pos_fp).open())
     neg_dict = json.load(Path(neg_fp).open())
     lemma_sent = lemmatise(sentence)

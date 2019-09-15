@@ -7,3 +7,7 @@ first balanced: 50/50: huh!
 
 
 
+
+texblob simple:
+Final ACC: 55.0
+num_pos: 50 out of 100
