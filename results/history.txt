@@ -18,3 +18,7 @@ textblob_Bayes:
 Final ACC: 61.0
 num_pos: 50 out of 100
 
+
+own_bayes_textblob_quick:
+Final ACC: 50.0
+num_pos: 27 out of 50
