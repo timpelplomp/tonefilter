@@ -18,17 +18,17 @@ def blob_it(what_to):
 def freq_all():
     with open("resources/txt_in/neg/draculafirst.txt", "r", encoding="utf-8") as d:
         drac_raw = d.read()
-    with open ("resources/txt_in/pos/dearlittlecouple.txt", "r", encoding="utf-8") as p:
+    with open("resources/txt_in/pos/dearlittlecouple.txt", "r", encoding="utf-8") as p:
         pos_raw = p.read()
 
     both_raw = drac_raw + pos_raw
     blob = TextBlob(both_raw)
     id_dict = {}
-    id = 1
+    ident_num = 1
     for token in blob.words:
         if token not in id_dict:
-            id_dict[token] = id
-            id += 1
+            id_dict[token] = ident_num
+            ident_num += 1
     return id_dict
 
 
@@ -98,5 +98,4 @@ def create_test_set():
 # readfile.dump_into_json("id_dict", "id_dict.json", freq_all())
 # encode_text(blob_it("drac"), 1)
 # get_both_corp()
-
-create_test_set()
+# create_test_set()
