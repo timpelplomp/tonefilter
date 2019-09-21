@@ -1,6 +1,7 @@
 from textblob import TextBlob
 import json
 import readfile
+import random
 
 
 def blob_it(what_to):
@@ -31,11 +32,12 @@ def freq_all():
     return id_dict
 
 
-def encode_text(blob, flag):
+def encode_text(blob, flag, until):
     with open("id_dict/id_dict.json", "r", encoding="utf-8") as f:
         encode_dict = json.load(f)
+
     encoded_sents = []
-    for sentence in blob.sentences:
+    for sentence in blob.sentences[:until]:
         subset = []
         for word in sentence.words:
             if word in encode_dict:
@@ -43,10 +45,33 @@ def encode_text(blob, flag):
             else:
                 subset.append(0)
 
-            encoded_sents.append(subset)
+        encoded_sents.append([subset, flag])
+    return encoded_sents
 
-    print(encoded_sents)
+
+def shuffle_save_all(encoded_lists):
+    random.shuffle(encoded_lists)
+
+    enc_sents = []
+    cl_sents = []
+    for sublist in encoded_lists:
+        enc_sents.append(sublist[0])
+        cl_sents.append(sublist[1])
+
+    readfile.dump_into_json("total_train_sets", "enc_sents.json", enc_sents)
+    readfile.dump_into_json("total_train_sets", "cl_sents.json", cl_sents)
 
 
-readfile.dump_into_json("id_dict", "id_dict.json", freq_all())
+def get_both_corp():
+    drac_blob = blob_it("drac")
+    pos_blob = blob_it("pos")
+
+    max_len_possible = min(len(drac_blob.sentences), len(pos_blob.sentences))
+    combined_list = encode_text(drac_blob, 0, max_len_possible) + encode_text(pos_blob, 1, max_len_possible)
+
+    shuffle_save_all(combined_list)
+
+
+# readfile.dump_into_json("id_dict", "id_dict.json", freq_all())
 # encode_text(blob_it("drac"), 1)
+# get_both_corp()

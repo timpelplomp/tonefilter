@@ -1,6 +1,7 @@
 from core_all import core_all
 import dict_comparison
 import dictionary_creation
+import create_set
 
 
 def wrap():
@@ -19,3 +20,6 @@ def wrap():
 
     dict_comparison.wrap()
     print("dictionaries compared and trimmed")
+
+    create_set.get_both_corp()
+    print("encoded in total train sets")
