@@ -3,6 +3,17 @@ import json
 import readfile
 
 
+def blob_it(what_to):
+    if what_to is "drac":
+        with open("resources/txt_in/neg/draculafirst.txt", "r", encoding="utf-8") as d:
+            drac_raw = d.read()
+            return TextBlob(drac_raw)
+    elif what_to is "pos":
+        with open("resources/txt_in/pos/dearlittlecouple.txt", "r", encoding="utf-8") as p:
+            pos_raw = p.read()
+            return TextBlob(pos_raw)
+
+
 def freq_all():
     with open("resources/txt_in/neg/draculafirst.txt", "r", encoding="utf-8") as d:
         drac_raw = d.read()
@@ -20,4 +31,15 @@ def freq_all():
     return id_dict
 
 
-readfile.dump_into_json("id_dict/", "id_dict.json", freq_all())
+def encode_text(blob, flag):
+    with open("id_dict/id_dict.json", "r", encoding="utf-8") as f:
+        encode_dict = json.load(f)
+    encoded_sents = []
+    for sentence in blob.sentences:
+        encoded_sents.append([encode_dict[word] for word in sentence.words])
+
+    print(encoded_sents)
+
+
+readfile.dump_into_json("id_dict", "id_dict.json", freq_all())
+# encode_text(blob_it("drac"), 1)
