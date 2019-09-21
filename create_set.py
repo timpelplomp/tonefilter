@@ -37,7 +37,11 @@ def encode_text(blob, flag, until):
         encode_dict = json.load(f)
 
     encoded_sents = []
-    for sentence in blob.sentences[:until]:
+
+    blob_sents = blob.sentences
+    random.shuffle(blob_sents)
+
+    for sentence in blob_sents[:until]:
         subset = []
         for word in sentence.words:
             if word in encode_dict:
@@ -97,5 +101,5 @@ def create_test_set():
 
 # readfile.dump_into_json("id_dict", "id_dict.json", freq_all())
 # encode_text(blob_it("drac"), 1)
-# get_both_corp()
+get_both_corp()
 # create_test_set()
