@@ -23,7 +23,7 @@ def freq_all():
     both_raw = drac_raw + pos_raw
     blob = TextBlob(both_raw)
     id_dict = {}
-    id = 0
+    id = 1
     for token in blob.words:
         if token not in id_dict:
             id_dict[token] = id
@@ -36,7 +36,14 @@ def encode_text(blob, flag):
         encode_dict = json.load(f)
     encoded_sents = []
     for sentence in blob.sentences:
-        encoded_sents.append([encode_dict[word] for word in sentence.words])
+        subset = []
+        for word in sentence.words:
+            if word in encode_dict:
+                subset.append(encode_dict[word])
+            else:
+                subset.append(0)
+
+            encoded_sents.append(subset)
 
     print(encoded_sents)
 
