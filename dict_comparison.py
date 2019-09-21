@@ -17,9 +17,9 @@ def create_both(raw_neg_dict, raw_pos_dict, path="final_dict"):
     readfile.dump_into_json(path, "neg_dict_cut.json", cut_off_neg)
 
 
-def cut_off_dict(input_dict, compare_dict, tolerance=10):
+def cut_off_dict(input_dict, compare_dict, tolerance=5):
     new_dict = {key: value for (key, value) in input_dict.items()
-                if key not in compare_dict or value > compare_dict[key] + tolerance}
+                if key not in compare_dict or value / compare_dict[key] > tolerance}
 
     return new_dict
 

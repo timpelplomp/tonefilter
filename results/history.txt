@@ -22,3 +22,13 @@ num_pos: 50 out of 100
 own_bayes_textblob_quick:
 Final ACC: 50.0
 num_pos: 27 out of 50
+
+
+
+model = Sequential()
+model.add(Embedding(max_features, 128))
+model.add(LSTM(128, dropout=0.2, recurrent_dropout=0.2))
+model.add(Dense(1, activation='sigmoid'))
+# Test score: 1.0290148921877145
+# Test accuracy: 0.8094
+
