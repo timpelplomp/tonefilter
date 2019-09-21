@@ -5,7 +5,8 @@ first unbalanced: accuracy 56 - negative leaning
 
 first balanced: 50/50: huh!
 
-
+second balanced (changed tolerance to % times larger than other value in different dict):
+ Final ACC: 51
 
 
 textblob_simple simple:

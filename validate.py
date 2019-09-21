@@ -103,5 +103,5 @@ def test_blob_naive_bayes_classifier_own(sent_path):
 
 
 path_sent = "resources/testdata/sentiment_saetze.txt"
-# test_own("resources/testdata/sentiment_saetze.txt")
-test_blob_naive_bayes_classifier_own(path_sent)
+test_own("resources/testdata/sentiment_saetze.txt")
+# test_blob_naive_bayes_classifier_own(path_sent)

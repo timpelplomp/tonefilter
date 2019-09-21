@@ -11,9 +11,11 @@ def wrap():
     # output_dir_neg = "resources/tagged_in/neg"
     # starts programme
     core_all(input_dir_pos, output_dir_pos)
+    print("stanford done")
     in_pos_dir = "resources/tagged_in/pos"
     out_pos_dir = "resources/dicts/pos"
     dictionary_creation.create_lemma_dict(in_pos_dir, out_pos_dir)
-
+    print("dictionary created")
 
     dict_comparison.wrap()
+    print("dictionaries compared and trimmed")
