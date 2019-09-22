@@ -9,9 +9,18 @@ second balanced (changed tolerance to % times larger than other value in differe
  Final ACC: 51
 
 
+increased pos with Kitty's class and other stories:(tolerance 40)
+Acc: 52
+
+increased pos with Kitty's class and other stories:(tolerance 5)
+Acc: 54
+
+
 textblob_simple simple:
 Final ACC: 55.0
 num_pos: 50 out of 100
+
+
 
 
 textblob_Bayes:

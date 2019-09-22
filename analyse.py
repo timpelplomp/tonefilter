@@ -15,7 +15,7 @@ def analyse_sent(sentence="NOOOO", pos_fp="final_dict/pos_dict_cut.json", neg_fp
             final_score += 1
         elif lemma in neg_dict:
             final_score -= 1
-    if final_score > 1:
+    if final_score >= 1:
         return 1
     # elif final_score == 0:
     #     return 0
