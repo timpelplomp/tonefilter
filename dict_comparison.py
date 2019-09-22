@@ -29,5 +29,4 @@ def wrap():
     pos_dict = json.load(pathlib.Path("resources/dicts/pos/dearlittlecouple.json").open())
     create_both(neg_dict["draculafirst.xml"], pos_dict["dearlittlecouple.xml"])
 
-
 wrap()

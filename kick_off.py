@@ -21,5 +21,6 @@ def wrap():
     dict_comparison.wrap()
     print("dictionaries compared and trimmed")
 
-    create_set.get_both_corp()
-    print("encoded in total train sets")
+    # create_set.get_both_corp()
+    # print("encoded in total train sets")
+wrap()
